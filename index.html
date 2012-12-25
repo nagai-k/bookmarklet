@@ -1,74 +1,183 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Bookmarklet : " />
+    <meta charset="utf-8">
+    <title>Public Memo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <!-- Le styles -->
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="./assets/css/prettify.css" rel="stylesheet">
 
-    <title>Bookmarklet</title>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="./assets/ico/favicon.png">
   </head>
 
   <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/nagai-k/bookmarklet">View on GitHub</a>
-
-          <h1 id="project_title">Bookmarklet</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/nagai-k/bookmarklet/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/nagai-k/bookmarklet/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Public Memo</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#bookmarklet">Bookmarklet</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
+    <div class="container">
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Bookmarklet maintained by <a href="https://github.com/nagai-k">nagai-k</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+      <h2 id="bookmarklet">Bookmarklet</h2>
+      <div>※リンクをブックマークバーにドラッグしてください。</div>
+      <br/>
+      <h3 style="display:inline"><a href="javascript:var%20w=window.open('','_blank','width=800,height=500,scrollbars=yes');var%20s=document.createElement('script');s.charset='Shift_JIS';s.src='http://klab-nagai-k.github.com/public_memo/assets/js/tagcheck2.js?'+Math.random();document.body.appendChild(s);void(0);">タグ対応をチェック</a></h3>
+          <span data-toggle="collapse" data-target="#bmlt-tagcheck"><i class="icon-search"></i>code</span>
+        <div  id="bmlt-tagcheck" class="collapse">
+        <pre class="prettyprint linenums">
+javascript:
+    var w=window.open('','_blank','width=800,height=500,scrollbars=yes');
+    var s=document.createElement('script');
+    s.charset='Shift_JIS';
+    s.src='http://klab-nagai-k.github.com/public_memo/assets/js/tagcheck2.js?'+Math.random();
+    document.body.appendChild(s);
+    void(0);
+        </pre>
+        </div>
+      
+        <h3 style="display:inline"><a href="javascript:(function(){var%20img_width=300;var%20img_height=300;var%20message=window.prompt('text',message);if(!message){return};var%20src_value='http://chart.apis.google.com/chart?chs='+img_width+'x'+img_height+'&cht=qr&chl='+encodeURIComponent(message);var%20img_tag=document.createElement('img');img_tag.src=src_value;img_tag.width=img_width;img_tag.height=img_height;img_tag.style['position']='absolute';img_tag.style['top']=(screen.height/2-img_height/2)+'px';img_tag.style['left']=(screen.width/2-img_width/2)+'px';img_tag.onclick=function(){var%20delNode=document.getElementById('bmlt_modal');delNode.parentNode.removeChild(delNode);};var%20div_tag=document.createElement('div');div_tag.id='bmlt_modal';div_tag.style['width']=screen.width+'px';div_tag.style['height']=screen.height+'px';div_tag.style['background-color']='black';div_tag.style['position']='fixed';div_tag.style['z-index']='99999';div_tag.style['top']='0';div_tag.style['left']='0';div_tag.appendChild(img_tag);var%20body_tag=document.getElementsByTagName('body').item(0);body_tag.appendChild(div_tag);})()">QRコード生成</a></h3>
+        <span data-toggle="collapse" data-target="#bmlt-qrcode"><i class="icon-search"></i>code</span>
+        <div  id="bmlt-qrcode" class="collapse">
+        <pre class="prettyprint linenums">
+javascript:(function(){
+    var img_width=300;
+    var img_height=300;
+    var message=window.prompt('text', message);
+    if(!message){return};
     
+    var src_value='http://chart.apis.google.com/chart?chs='+img_width+'x'+img_height+'&cht=qr&chl='+encodeURIComponent(message);
+    var img_tag=document.createElement('img');
+    img_tag.src=src_value;
+    img_tag.width=img_width;
+    img_tag.height=img_height;
+    img_tag.style['position']='absolute';
+    img_tag.style['top']=(screen.height/2 - img_height/2)+'px';
+    img_tag.style['left']=(screen.width/2 - img_width/2)+'px';
+    img_tag.onclick=function(){
+        var delNode=document.getElementById('bmlt_modal');
+        delNode.parentNode.removeChild(delNode);
+    };
+    var div_tag=document.createElement('div');
+    div_tag.id='bmlt_modal';
+    div_tag.style['width']=screen.width+'px';
+    div_tag.style['height']=screen.height+'px';
+    div_tag.style['background-color']='black';
+    div_tag.style['position']='fixed';
+    div_tag.style['z-index']='99999';
+    div_tag.style['top']='0';
+    div_tag.style['left']='0';
+    div_tag.appendChild(img_tag);
+    var body_tag=document.getElementsByTagName('body').item(0);
+    body_tag.appendChild(div_tag);
+})()
+        </pre>
+        </div>
+        <h3 style="display:inline"><a href="javascript:(function(){if(!message){var%20message='320x240';}var%20message=window.prompt('size',message);if(!message){return};var%20vars=message.split('x');if(vars.length!=2){return};var%20img_width=parseInt(vars[0],10);var%20img_height=parseInt(vars[1],10);var%20src_value='http://dummyimage.com/'+message;var%20img_tag=document.createElement('img');img_tag.src=src_value;img_tag.width=img_width;img_tag.height=img_height;img_tag.style['position']='absolute';img_tag.style['top']=(screen.height/2-img_height/2)+'px';img_tag.style['left']=(screen.width/2-img_width/2)+'px';img_tag.onclick=function(){var%20delNode=document.getElementById('bmlt_modal');delNode.parentNode.removeChild(delNode);};var%20div_tag=document.createElement('div');div_tag.id='bmlt_modal';div_tag.style['width']=screen.width+'px';div_tag.style['height']=screen.height+'px';div_tag.style['background-color']='black';div_tag.style['position']='fixed';div_tag.style['z-index']='99999';div_tag.style['top']='0';div_tag.style['left']='0';div_tag.appendChild(img_tag);var%20body_tag=document.getElementsByTagName('body').item(0);body_tag.appendChild(div_tag);})()">ダミー画像作成</a></h3>
+        <span data-toggle="collapse" data-target="#bmlt-dummyimage"><i class="icon-search"></i>code</span>
+        <div  id="bmlt-dummyimage" class="collapse">
+        <pre class="prettyprint linenums">
+javascript:(function(){
+    if(!message){
+        var message = '320x240';
+    }
+    
+    var message=window.prompt('size', message);
+    if(!message){return};
+    
+    var vars = message.split('x');
+    if(vars.length !=2){return};
+    
+    var img_width=parseInt(vars[0], 10);
+    var img_height=parseInt(vars[1], 10);
+    
+    var src_value='http://dummyimage.com/'+message;
+    var img_tag=document.createElement('img');
+    img_tag.src=src_value;
+    img_tag.width=img_width;
+    img_tag.height=img_height;
+    img_tag.style['position']='absolute';
+    img_tag.style['top']=(screen.height/2 - img_height/2)+'px';
+    img_tag.style['left']=(screen.width/2 - img_width/2)+'px';
+    img_tag.onclick=function(){
+        var delNode=document.getElementById('bmlt_modal');
+        delNode.parentNode.removeChild(delNode);
+    };
+    var div_tag=document.createElement('div');
+    div_tag.id='bmlt_modal';
+    div_tag.style['width']=screen.width+'px';
+    div_tag.style['height']=screen.height+'px';
+    div_tag.style['background-color']='black';
+    div_tag.style['position']='fixed';
+    div_tag.style['z-index']='99999';
+    div_tag.style['top']='0';
+    div_tag.style['left']='0';
+    div_tag.appendChild(img_tag);
+    var body_tag=document.getElementsByTagName('body').item(0);
+    body_tag.appendChild(div_tag);
+})()
+        </pre>
+        </div>
+ 
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/prettify.js"></script>
+    <script src="./assets/js/bootstrap-transition.js"></script>
+    <script src="./assets/js/bootstrap-alert.js"></script>
+    <script src="./assets/js/bootstrap-modal.js"></script>
+    <script src="./assets/js/bootstrap-dropdown.js"></script>
+    <script src="./assets/js/bootstrap-scrollspy.js"></script>
+    <script src="./assets/js/bootstrap-tab.js"></script>
+    <script src="./assets/js/bootstrap-tooltip.js"></script>
+    <script src="./assets/js/bootstrap-popover.js"></script>
+    <script src="./assets/js/bootstrap-button.js"></script>
+    <script src="./assets/js/bootstrap-collapse.js"></script>
+    <script src="./assets/js/bootstrap-carousel.js"></script>
+    <script src="./assets/js/bootstrap-typeahead.js"></script>
+    <script>
+    $(document).ready(function(){
+      window.prettyPrint && prettyPrint();
+    });
+    </script>
 
   </body>
 </html>
