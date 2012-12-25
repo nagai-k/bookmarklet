@@ -192,9 +192,7 @@ void(0);
       //動的にブックマークレットのリンクを生成
       $('.prettyprint').each(function(i){
           var href = encodeURIComponent($(this).text().replace(/^\s*/,'').replace(/\s*\n\s*/g, ''));
-          console.log(href);
           var target = $($(this).data('target'))[0];
-          console.log(target);
           target.href="javascript:"+href;
       });
       //コードを見やすく
