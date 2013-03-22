@@ -244,7 +244,80 @@ void(0);
         </pre>
         </div>
         <!-- Bookmarklet3 Block end -->
- 
+        
+        <!-- bookmarklet_src_block4 Block Start -->
+      <h3 style="display:inline"><a href="" id="bookmarklet_link4">今でしょジェネレータ</a></h3>
+          <span data-toggle="collapse" data-target="#bookmarklet_src_block4"><i class="icon-search"></i>code</span>
+        <div  id="bookmarklet_src_block4" class="collapse">
+        <pre class="prettyprint linenums" data-target="#bookmarklet_link4">
+(function(){
+    var imaTxt=window.prompt('変換するのはいつか。。。今でしょ！(全角)', imaTxt);
+    if(!imaTxt){return};
+    
+    if(imaTxt.length < 4){
+        for(var i = 0;i<(4 - imaTxt.length + i);i++){
+            imaTxt = imaTxt + '　';
+        }
+    }
+    var AA = ['┌○┐'];
+    for(var m = 0;m < imaTxt.length;m++){
+        var charTxt = imaTxt.charAt(m);
+        if(imaTxt.charAt(m) == 'ー'){
+            charTxt = '｜';
+        }
+        if(imaTxt.length - m == 4){
+            AA.push('｜' + charTxt + '｜ﾊ＿ﾊ');
+        }
+        else if(imaTxt.length - m == 3){
+            AA.push('｜' + charTxt + '｜ﾟωﾟ )');
+        }
+        else if(imaTxt.length - m == 2){
+            AA.push('｜' + charTxt + '｜ ／/');
+        }
+        else if(imaTxt.length - m == 1){
+            AA.push('｜' + charTxt + '｜(⌒)');
+        }
+        else{
+            AA.push('｜' + charTxt + '｜');
+        }
+    }
+    AA.push('└○┘し′"');
+    
+    var aa_tag=document.createElement('pre');
+    var aa_tag_width=150;
+    var aa_tag_height=300;
+    aa_tag.innerHTML=AA.join('\n');
+    aa_tag.style['position']='absolute';
+    aa_tag.style['color']='white';
+    aa_tag.style['background-color']='black';
+    aa_tag.style['border']='solid 2px white';
+    aa_tag.style['top']='50px';
+    aa_tag.style['left']='50px';
+    aa_tag.onclick=function(event){
+        event.stopPropagation();
+    };
+    
+    var div_tag=document.createElement('div');
+    div_tag.id='bmlt_modal';
+    div_tag.style['width']=screen.width+'px';
+    div_tag.style['height']=screen.height+'px';
+    div_tag.style['background-color']='black';
+    div_tag.style['position']='fixed';
+    div_tag.style['z-index']='99999';
+    div_tag.style['top']='0';
+    div_tag.style['left']='0';
+    div_tag.onclick=function(){
+        var delNode=document.getElementById('bmlt_modal');
+        delNode.parentNode.removeChild(delNode);
+    };
+    div_tag.appendChild(aa_tag);
+    var body_tag=document.getElementsByTagName('body').item(0);
+    body_tag.appendChild(div_tag);
+})()
+        </pre>
+        </div>
+        <!-- Bookmarklet4 Block end -->
+        
     </div> <!-- /container -->
 
     <!-- Le javascript
