@@ -193,9 +193,9 @@ void(0);
     encode_btn.style['border-radius']='2xp';
     encode_btn.style['width']='100%';
     encode_btn.onclick = function(){
-        var output_text = encodeURIComponent($('#encode_textarea').val());
-        var output_block = $('#decode_textarea');
-        output_block.val(output_text);
+        var output_text = encodeURIComponent(document.getElementById('encode_textarea').value);
+        var output_block = document.getElementById('decode_textarea');
+        output_block.value = output_text;
     };
     
     var decode_textarea = encode_textarea.cloneNode();
@@ -204,9 +204,9 @@ void(0);
     var decode_btn = encode_btn.cloneNode();
     decode_btn.innerHTML="デコード";
     decode_btn.onclick = function(){
-        var output_text = decodeURIComponent($('#decode_textarea').val());
-        var output_block = $('#encode_textarea');
-        output_block.val(output_text);
+        var output_text = decodeURIComponent(document.getElementById('decode_textarea').value);
+        var output_block = document.getElementById('encode_textarea');
+        output_block.value = output_text;
     };
     
     var close_btn = encode_btn.cloneNode();
