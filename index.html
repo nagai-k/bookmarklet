@@ -82,15 +82,15 @@ void(0);
     img_tag.width=img_width;
     img_tag.height=img_height;
     img_tag.style['position']='absolute';
-    img_tag.style['top']=(screen.height/2 - img_height/2)+'px';
-    img_tag.style['left']=(screen.width/2 - img_width/2)+'px';
+    img_tag.style['top']='0px';
+    img_tag.style['left']='0px';
     img_tag.onclick=function(){
         var delNode=document.getElementById('bmlt_modal');
         delNode.parentNode.removeChild(delNode);
     };
     var div_tag=document.createElement('div');
     div_tag.id='bmlt_modal';
-    div_tag.style['width']=screen.width+'px';
+    div_tag.style['width']='100%';
     div_tag.style['height']=screen.height+'px';
     div_tag.style['background-color']='black';
     div_tag.style['position']='fixed';
@@ -130,15 +130,15 @@ void(0);
     img_tag.width=img_width;
     img_tag.height=img_height;
     img_tag.style['position']='absolute';
-    img_tag.style['top']=(screen.height/2 - img_height/2)+'px';
-    img_tag.style['left']=(screen.width/2 - img_width/2)+'px';
+    img_tag.style['top']='0px';
+    img_tag.style['left']='0px';
     img_tag.onclick=function(){
         var delNode=document.getElementById('bmlt_modal');
         delNode.parentNode.removeChild(delNode);
     };
     var div_tag=document.createElement('div');
     div_tag.id='bmlt_modal';
-    div_tag.style['width']=screen.width+'px';
+    div_tag.style['width']='100%';
     div_tag.style['height']=screen.height+'px';
     div_tag.style['background-color']='black';
     div_tag.style['position']='fixed';
@@ -164,8 +164,9 @@ void(0);
     contents_block.style['width']='100%';
     contents_block.style['height']='100%';
     contents_block.style['display']='-webkit-box';
-    contents_block.style['-webkit-box-align']='center';
+    #contents_block.style['-webkit-box-align']='center';
     contents_block.style['-webkit-box-pack']='center';
+    contents_block.style['margin-top']='5%';
 
     var wrapper_block=document.createElement('div');
     wrapper_block.style['width']='90%';
@@ -229,7 +230,7 @@ void(0);
     
     var div_tag=document.createElement('div');
     div_tag.id='bmlt_modal';
-    div_tag.style['width']=screen.width+'px';
+    div_tag.style['width']='100%';
     div_tag.style['height']=screen.height+'px';
     div_tag.style['background-color']='black';
     div_tag.style['position']='fixed';
@@ -246,7 +247,7 @@ void(0);
         <!-- Bookmarklet3 Block end -->
         
         <!-- bookmarklet_src_block4 Block Start -->
-      <h3 style="display:inline"><a href="" id="bookmarklet_link4">今でしょジェネレータ</a></h3>
+      <h3 style="display:inline"><a href="" id="bookmarklet_link4">AAジェネレータ【勝訴】</a></h3>
           <span data-toggle="collapse" data-target="#bookmarklet_src_block4"><i class="icon-search"></i>code</span>
         <div  id="bookmarklet_src_block4" class="collapse">
         <pre class="prettyprint linenums" data-target="#bookmarklet_link4">
@@ -301,7 +302,7 @@ void(0);
     
     var div_tag=document.createElement('div');
     div_tag.id='bmlt_modal';
-    div_tag.style['width']=screen.width+'px';
+    div_tag.style['width']='100%';
     div_tag.style['height']=screen.height+'px';
     div_tag.style['background-color']='black';
     div_tag.style['position']='fixed';
